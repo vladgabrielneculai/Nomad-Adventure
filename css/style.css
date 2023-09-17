@@ -2193,3 +2193,6 @@ a:focus, a:hover {
   margin-top:16px;
 }
 
+.center-first-row{
+  justify-content: center;
+}
