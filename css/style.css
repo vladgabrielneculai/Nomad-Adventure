@@ -1,6 +1,11 @@
 /*=== MEDIA QUERY ===*/
 @import url("https://fonts.googleapis.com/css?family=Catamaran:400,500,600,700,700|Source+Sans+Pro:400,600");
 
+@font-face {
+  font-family: Pagkaki;
+  src: url(pagkaki_regular.woff);
+}
+
 body {
   line-height: 1.4;
   font-family: "Source Sans Pro", sans-serif;
