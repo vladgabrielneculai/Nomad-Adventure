@@ -508,6 +508,10 @@ a:hover {
   opacity: 1;
 }
 
+.navigation .dropdown:hover .dropdown-menu{
+  display: block;
+}
+
 .navigation .dropdown-menu {
   border: 0;
   border-radius: 0;
