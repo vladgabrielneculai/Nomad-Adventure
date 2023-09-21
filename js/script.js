@@ -184,15 +184,65 @@
   // -----------------------------
   //  FAQ
   // -----------------------------
-  const question = document.querySelectorAll('.question');
-  const answer = document.querySelectorAll('.answer');
-  const arrow = document.querySelectorAll('.arrow');
+  const question = document.querySelectorAll(".question");
+  const answer = document.querySelectorAll(".answer");
+  const arrow = document.querySelectorAll(".arrow");
 
   for (let i = 0; i < question.length; i++) {
-    question[i].addEventListener ('click', () => {
-    answer[i].classList.toggle('answer-opened');
-    arrow[i]. classList.toggle ('arrow-rotated');
+    question[i].addEventListener("click", () => {
+      answer[i].classList.toggle("answer-opened");
+      arrow[i].classList.toggle("arrow-rotated");
     });
   }
 
+  // ---------------------------
+  //  FORMULAR INSCRIERE
+  // ---------------------------
+
+  // Obține toate elementele radio pentru Calitate și adaugă un eveniment onchange pentru fiecare
+  const profesorRadio = document.getElementById("profesor");
+  const parinteRadio = document.getElementById("parinte");
+  const numberKidsInput = document.getElementById("number_kids");
+  const numberTeachersInput = document.getElementById("number_teachers");
+
+
+
+  profesorRadio.addEventListener("change", function () {
+    // Dacă este selectat "Profesor", activează input-urile pentru numărul de copii și cadre didactice
+    if (profesorRadio.checked) {
+      numberKidsInput.disabled = false;
+      numberTeachersInput.disabled = false;
+    } else {
+      // Dacă este selectat "Părinte", dezactivează input-urile pentru numărul de copii și cadre didactice
+      numberKidsInput.disabled = true;
+      numberTeachersInput.disabled = true;
+      // Resetază valorile din input-uri pentru numărul de copii și cadre didactice
+      numberKidsInput.value = "";
+      numberTeachersInput.value = "";
+    }
+  });
+
+  // Obține elementul "Accept toate condițiile de mai jos" și setează eveniment onchange
+  const allTermsCheckbox = document.getElementById("all_terms");
+
+  allTermsCheckbox.addEventListener("change", function () {
+    // Dacă este bifat "Accept toate condițiile de mai jos", bifează toate celelalte checkbox-uri
+    if (allTermsCheckbox.checked) {
+      const checkboxes = document.querySelectorAll(
+        'input[type="checkbox"]:not(#all_terms)'
+      );
+      checkboxes.forEach(function (checkbox) {
+        checkbox.checked = true;
+      });
+    } else {
+      // Dacă este debifat "Accept toate condițiile de mai jos", debifează toate celelalte checkbox-uri
+      const checkboxes = document.querySelectorAll(
+        'input[type="checkbox"]:not(#all_terms)'
+      );
+      checkboxes.forEach(function (checkbox) {
+        checkbox.checked = false;
+      });
+    }
+  });
+  
 })(jQuery);

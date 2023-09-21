@@ -503,12 +503,12 @@ a:hover {
   }
 }
 
-.navigation .dropdown:hover > .dropdown-menu {
+.navigation .dropdown:hover>.dropdown-menu {
   visibility: visible;
   opacity: 1;
 }
 
-.navigation .dropdown:hover .dropdown-menu{
+.navigation .dropdown:hover .dropdown-menu {
   display: block;
 }
 
@@ -767,6 +767,7 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+
   .hero-slider .prevArrow,
   .hero-slider .nextArrow {
     display: none !important;
@@ -1106,7 +1107,7 @@ a:hover {
   top: 50%;
 }
 
-.counters-item > div {
+.counters-item>div {
   margin: 6px 0;
 }
 
@@ -1186,14 +1187,14 @@ a:hover {
   padding: 30px 0 20px;
 }
 
-.pricing-table .price-title > h3 {
+.pricing-table .price-title>h3 {
   font-weight: 700;
   margin: 0 0 5px;
   font-size: 15px;
   text-transform: uppercase;
 }
 
-.pricing-table .price-title > p {
+.pricing-table .price-title>p {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -1904,7 +1905,7 @@ a:hover {
   color: #a9c479;
 }
 
-.post-meta > span {
+.post-meta>span {
   color: #666;
   border-right: 1px solid #dedede;
   display: inline-block;
@@ -1913,11 +1914,11 @@ a:hover {
   padding-right: 10px;
 }
 
-.post-meta > span:last-child {
+.post-meta>span:last-child {
   border-right: 0;
 }
 
-.post-meta > span i {
+.post-meta>span i {
   margin-right: 5px;
 }
 
@@ -2000,7 +2001,7 @@ a:hover {
   margin-right: 20px;
 }
 
-.post-author > img {
+.post-author>img {
   border: 1px solid #dedede;
   max-width: 120px;
   padding: 5px;
@@ -2164,6 +2165,7 @@ a:hover {
 }
 
 @media (min-width: 980px) and (max-width: 1150px) {
+
   /* parallax section */
   .parallax-section {
     background-position: center top !important;
@@ -2187,7 +2189,7 @@ a:hover {
     margin: 0 5px;
   }
 
-  .team-mate > h4 {
+  .team-mate>h4 {
     margin-bottom: 10px;
   }
 
@@ -2269,7 +2271,7 @@ a:hover {
     width: 90%;
   }
 
-  .skill-chart > h3 {
+  .skill-chart>h3 {
     margin: 15px 0;
   }
 
