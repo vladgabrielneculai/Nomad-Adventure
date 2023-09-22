@@ -2645,6 +2645,19 @@ a:hover {
   .faq-title {
     padding: 0 auto;
   }
+
+  .button-section{
+    padding: 0 2em;
+  }
+  
+  .button-section .content {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .button-section .btn {
+    width: 100%;
+  }
 }
 
 .button-section{
@@ -2658,4 +2671,6 @@ a:hover {
 
 .button-section .btn {
   width: 100%;
+  margin-bottom: 10px;
 }
+
