@@ -2549,7 +2549,7 @@ a:hover {
 
 /* Original CSS for FAQ section */
 .faq-section {
-  padding: 4em 2em;
+  padding: 2em 2em;
 }
 
 .faq {
@@ -2610,7 +2610,7 @@ a:hover {
 }
 
 /* Responsive CSS for FAQ section */
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .faq-section {
     padding: 2em 1em;
   }
@@ -2645,4 +2645,17 @@ a:hover {
   .faq-title {
     padding: 0 auto;
   }
+}
+
+.button-section{
+  padding: 0 2em;
+}
+
+.button-section .content {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.button-section .btn {
+  width: 100%;
 }
