@@ -25,7 +25,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Catamaran", sans-serif;
   font-weight: 600;
 }
 
@@ -1131,211 +1130,6 @@ a:hover {
 }
 
 /*=================================================================
-  Pricing section
-==================================================================*/
-.pricing-table {
-  padding: 100px 0;
-  padding-bottom: 70px;
-  background: url("../images/pricing-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-.pricing-table .title p {
-  color: #fff;
-}
-
-.pricing-table:before {
-  background: rgba(0, 0, 0, 0.62);
-  position: absolute;
-  z-index: 999;
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.pricing-table .container {
-  position: relative;
-  z-index: 999;
-}
-
-.pricing-table .pricing-item {
-  padding: 40px 55px 65px;
-  background: #fff;
-  margin-bottom: 30px;
-}
-
-.pricing-table .pricing-item a.btn-main {
-  text-transform: uppercase;
-  margin-top: 20px;
-}
-
-.pricing-table .pricing-item li {
-  font-weight: 400;
-  padding: 10px 0;
-  color: #666;
-}
-
-.pricing-table .pricing-item li i {
-  margin-right: 6px;
-}
-
-.pricing-table .price-title {
-  padding: 30px 0 20px;
-}
-
-.pricing-table .price-title>h3 {
-  font-weight: 700;
-  margin: 0 0 5px;
-  font-size: 15px;
-  text-transform: uppercase;
-}
-
-.pricing-table .price-title>p {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  margin-top: 5px;
-}
-
-.pricing-table .price-title .value {
-  color: #a9c479;
-  font-size: 50px;
-  padding: 10px 0;
-}
-
-/*=================================================================
-  Portfolio section
-==================================================================*/
-.portfolio-filter {
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.portfolio-filter button {
-  cursor: pointer;
-  display: inline-block;
-  font-size: 14px;
-  padding: 8px 20px;
-  text-transform: uppercase;
-  background: #a9c479;
-  border: none;
-  color: #fff;
-  outline: none;
-  margin: 6px 4px;
-}
-
-.portfolio-filter button.active {
-  background: #a9c479;
-  color: #fff;
-  border-radius: 50px;
-}
-
-.portfolio-block {
-  position: relative;
-  margin-bottom: 30px;
-}
-
-.portfolio-block:before {
-  transition: all 0.3s ease-in-out;
-  background: rgba(0, 0, 0, 0.55);
-  opacity: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  content: "";
-}
-
-.portfolio-block:hover:before {
-  opacity: 1;
-}
-
-.portfolio-block:hover .caption h4 {
-  top: 45%;
-}
-
-.portfolio-block:hover .caption {
-  opacity: 1;
-  top: 55%;
-}
-
-.portfolio-block .caption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  transform: translate(-50%, -50%);
-  z-index: 9;
-  transition: all 0.3s ease-in-out;
-  text-align: center;
-}
-
-.portfolio-block .caption h4 {
-  font-size: 16px;
-}
-
-.portfolio-block .caption h4 a {
-  color: #fff;
-}
-
-.portfolio-block .caption .search-icon {
-  background: #a9c479;
-  color: #fff;
-  display: inline-block;
-  height: 45px;
-  width: 45px;
-  font-size: 17px;
-  border-radius: 30px;
-  margin-bottom: 20px;
-  text-align: center;
-  line-height: 47px;
-}
-
-/*=================================================================
-  Services section
-==================================================================*/
-.services {
-  padding: 100px 0 130px;
-}
-
-.services .service-block.color-bg {
-  background: #a9c479;
-  color: #fff;
-}
-
-.services .service-block.color-bg i,
-.services .service-block.color-bg h3,
-.services .service-block.color-bg p {
-  color: #fff;
-}
-
-.services .service-block .service-icon {
-  margin-bottom: 30px;
-}
-
-.services .service-block i {
-  font-size: 75px;
-  color: #a9c479;
-}
-
-.services .service-block h3 {
-  color: #333;
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.services .service-block p {
-  font-size: 14px;
-  color: #666;
-}
-
-/*=================================================================
   Services section 2
 ==================================================================*/
 .service-2 .service-item {
@@ -1368,97 +1162,6 @@ a:hover {
   margin-bottom: 20px;
   width: 55px;
   transition: all 0.3s ease 0s;
-}
-
-/*=================================================================
-  Our skills
-==================================================================*/
-.team-skills .progress-block {
-  margin-top: 40px;
-}
-
-.team-skills .progress-block span {
-  display: inline-block;
-  margin-bottom: 5px;
-  font-size: 14px;
-}
-
-.team-skills .progress-block .progress {
-  box-shadow: none;
-  border-radius: 0;
-  height: 10px;
-}
-
-.team-skills .progress-block .progress .progress-bar {
-  background: #a9c479;
-  box-shadow: none;
-}
-
-.clients-logo-slider {
-  margin-top: 50px;
-}
-
-/*=================================================================
-  Step section
-==================================================================*/
-.development-steps .step {
-  padding: 80px 20px;
-}
-
-.development-steps .step h4 {
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.development-steps .step h4 i {
-  font-size: 72px;
-  font-weight: 500;
-  margin-right: 10px;
-}
-
-.development-steps .step p {
-  color: #cccccc;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.development-steps .step-1 {
-  background-color: #f2f6f8;
-}
-
-.development-steps .step-1 h4 {
-  color: #212121;
-}
-
-.development-steps .step-1 p {
-  color: #838383;
-}
-
-.development-steps .step-2 {
-  background-color: #a9c479;
-}
-
-.development-steps .step-2 h4,
-.development-steps .step-2 p {
-  color: #fff;
-}
-
-.development-steps .step-3 {
-  background: #198dbf;
-}
-
-.development-steps .step-3 h4,
-.development-steps .step-3 p {
-  color: #fff;
-}
-
-.development-steps .step-4 {
-  background: #167da9;
-}
-
-.development-steps .step-4 h4,
-.development-steps .step-4 p {
-  color: #fff;
 }
 
 /*=================================================================
@@ -1561,62 +1264,8 @@ a:hover {
 }
 
 /*=================================================================
-  Testimonial section
-==================================================================*/
-.testimonial {
-  padding-top: 100px;
-  background: #a9c479;
-  position: relative;
-  padding-bottom: 0px;
-  margin-bottom: 80px;
-}
-
-.testimonial:before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  bottom: 0;
-  height: 145px;
-  background-color: rgb(255, 255, 255);
-}
-
-.testimonial .item i {
-  font-size: 60px;
-  color: #fff;
-  margin-bottom: 50px;
-  display: inline-block;
-}
-
-.testimonial .item .client-details {
-  padding-bottom: 30px;
-}
-
-.testimonial .item .client-details p {
-  font-size: 17px;
-  color: #fff;
-  font-weight: 200;
-  padding: 0 10%;
-}
-
-.testimonial .item .client-thumb img {
-  display: inline-block;
-  border-radius: 100%;
-  width: 120px;
-  height: auto;
-  margin-bottom: 20px;
-}
-
-/*=================================================================
   Latest Posts
 ==================================================================*/
-.blog {
-  padding-bottom: 60px;
-  padding-top: 80px;
-  background: #f6f6f6;
-}
-
 .posts {
   padding-bottom: 40px;
 }
@@ -1624,6 +1273,8 @@ a:hover {
 .post-item {
   background: #fff;
   margin-bottom: 30px;
+  padding: 20px;
+  color: #000;
 }
 
 .post-item .content {
@@ -1644,430 +1295,7 @@ a:hover {
   margin: 15px 0;
 }
 
-/* 8.2.1 Blog Details */
-.blog-details h3 {
-  font-size: 30px;
-  color: #000;
-  margin-bottom: 10px;
-}
 
-/* 8.2.2 Post Content */
-.post-content ul {
-  margin-bottom: 20px;
-}
-
-.post-content ul li {
-  color: #aaa;
-}
-
-.post-content ul li a {
-  color: #aaa;
-}
-
-.post-content p {
-  margin-bottom: 30px;
-}
-
-.post-content blockquote {
-  border-left: 2px solid #a9c479;
-  padding: 40px 35px;
-  margin-bottom: 30px;
-  background: rgb(238, 238, 238);
-}
-
-.post-content-share {
-  margin-bottom: 100px;
-}
-
-.post-content-share li a {
-  height: 45px;
-  width: 45px;
-  line-height: 45px;
-  border: 1px solid #ddd;
-  text-align: center;
-  background: #fff;
-  transition: 0.3s ease;
-  margin-right: 10px;
-  color: #000;
-  display: inline-block;
-}
-
-.post-content-share li a:hover {
-  background: #a9c479;
-  border-color: #a9c479;
-  color: #fff;
-}
-
-/* 8.2.3 Comment List */
-.comment-list {
-  padding-left: 0;
-  margin-bottom: 70px;
-}
-
-.comment-list-item {
-  padding: 25px 0;
-  position: relative;
-  display: flex;
-  border-bottom: 1px solid #ddd;
-}
-
-.comment-list-item:last-child {
-  border: 0;
-}
-
-.comment-list-item-image {
-  margin-right: 20px;
-}
-
-.comment-list-item-content h5 {
-  color: #000;
-  margin-bottom: 5px;
-}
-
-.comment-list-item-content h6 {
-  color: #000;
-  margin-bottom: 10px;
-}
-
-.comment-list-item-content p {
-  margin-bottom: 5px;
-}
-
-.comment-list-item .comment-btn {
-  position: absolute;
-  top: 25px;
-  right: 0;
-  background: #fff;
-  padding: 10px 30px;
-  border: 1px solid #ddd;
-  text-transform: capitalize;
-  color: #000;
-  font-size: 15px;
-}
-
-@media (max-width: 575px) {
-  .comment-list-item .comment-btn {
-    position: unset;
-    margin-top: 15px;
-    display: inline-block;
-  }
-}
-
-.comment-list-item .comment-btn:hover {
-  background: #a9c479;
-  color: #fff;
-}
-
-/* 8.2.4 Comment Form */
-.comment-form {
-  margin-top: 40px;
-}
-
-.comment-form .form-control {
-  background-color: transparent;
-  border: 1px solid #dedede;
-  box-shadow: none;
-  height: 45px !important;
-  color: #0c0c0c;
-  height: 38px;
-  font-size: 14px;
-  border-radius: 0;
-  margin-bottom: 20px;
-}
-
-.comment-form textarea.form-control {
-  height: 200px !important;
-}
-
-.comment-form .btn-primary {
-  background: #a9c479;
-  border-radius: 0;
-  padding: 10px 20px;
-  border: 0;
-}
-
-/* 8.2.5 Widget Style */
-.widget {
-  margin-bottom: 30px;
-}
-
-.widget h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.widget-search {
-  position: relative;
-}
-
-.widget-search .form-control {
-  border: 1px solid #dedede;
-  border-radius: 0;
-  height: 50px;
-}
-
-.widget-search-btn {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 50px;
-  background: #a9c479;
-  border: 0;
-}
-
-.widget-search-btn i {
-  color: #fff;
-}
-
-.widget-categories-list {
-  padding-left: 0px;
-}
-
-.widget-categories-list li {
-  border-bottom: 1px solid #ddd;
-}
-
-.widget-categories-list li:last-child {
-  border: 0;
-}
-
-.widget-categories-list li a {
-  display: block;
-  padding: 15px 0;
-  color: #000;
-  font-size: 15px;
-  transition: 0.3s ease;
-}
-
-.widget-categories-list li a i {
-  font-size: 10px;
-  margin-right: 10px;
-}
-
-.widget-categories-list li a:hover {
-  background: #a9c479;
-  color: #fff;
-  padding-left: 20px;
-}
-
-.widget-post-list {
-  padding-left: 0;
-}
-
-.widget-post-list-item {
-  padding: 15px 0;
-  display: flex;
-}
-
-.widget-post-image {
-  margin-right: 10px;
-  height: 90px;
-  width: 130px;
-  overflow: hidden;
-}
-
-.widget-post-image img {
-  height: 90px;
-  width: auto;
-}
-
-.widget-post-content h5 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  transition: 0.3s ease;
-  color: #000;
-}
-
-.widget-post-content h5:hover {
-  color: #a9c479;
-}
-
-/*=================================================================
-  Single Blog Page
-==================================================================*/
-#blog-banner {
-  padding-bottom: 100px;
-  padding-top: 150px;
-}
-
-#blog-page {
-  margin: 0 0 40px;
-}
-
-.post-meta {
-  font-size: 13px;
-  margin: 20px 0 0;
-  padding: 0 20px 10px;
-}
-
-.post-meta a {
-  color: #a9c479;
-}
-
-.post-meta>span {
-  color: #666;
-  border-right: 1px solid #dedede;
-  display: inline-block;
-  font-size: 13px;
-  margin: 10px 10px 0 0;
-  padding-right: 10px;
-}
-
-.post-meta>span:last-child {
-  border-right: 0;
-}
-
-.post-meta>span i {
-  margin-right: 5px;
-}
-
-.post-excerpt {
-  padding: 0 20px;
-  margin-bottom: 60px;
-}
-
-.post-excerpt h3 a {
-  color: #000;
-}
-
-.post-excerpt blockquote {
-  line-height: 22px;
-  margin: 20px 0;
-  font-size: 16px;
-}
-
-.single-blog {
-  background-color: #fff;
-  margin-bottom: 50px;
-  padding: 20px;
-}
-
-.blog-subtitle {
-  font-size: 15px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #dedede;
-  margin-bottom: 25px;
-  text-transform: uppercase;
-}
-
-.next-prev {
-  border-bottom: 1px solid #dedede;
-  border-top: 1px solid #dedede;
-  margin: 20px 0;
-  padding: 25px 0;
-}
-
-.next-prev a {
-  color: #000;
-}
-
-.next-prev a:hover {
-  color: #a9c479;
-}
-
-.next-prev .prev-post i {
-  margin-right: 10px;
-}
-
-.next-prev .next-post i {
-  margin-left: 10px;
-}
-
-.social-profile ul li {
-  margin: 0 10px 0 0;
-  display: inline-block;
-}
-
-.social-profile ul li a {
-  color: #4e595f;
-  display: block;
-  font-size: 16px;
-}
-
-.social-profile ul li a i:hover {
-  color: #a9c479;
-}
-
-.comments-section {
-  margin-top: 35px;
-}
-
-.author-about {
-  margin-top: 40px;
-}
-
-.post-author {
-  margin-right: 20px;
-}
-
-.post-author>img {
-  border: 1px solid #dedede;
-  max-width: 120px;
-  padding: 5px;
-  width: 100%;
-}
-
-.comment-list ul {
-  margin-top: 20px;
-}
-
-.comment-list ul li {
-  margin-bottom: 20px;
-}
-
-.comment-wrap {
-  border: 1px solid #dedede;
-  border-radius: 1px;
-  margin-left: 20px;
-  padding: 10px;
-  position: relative;
-}
-
-.comment-wrap .author-avatar {
-  margin-right: 10px;
-}
-
-.comment-wrap .media .media-heading {
-  font-size: 14px;
-  margin-bottom: 8px;
-}
-
-.comment-wrap .media .media-heading a {
-  color: #a9c479;
-  font-size: 13px;
-}
-
-.comment-wrap .media .comment-meta {
-  font-size: 12px;
-  color: #888;
-}
-
-.comment-wrap .media p {
-  margin-top: 15px;
-}
-
-.comment-reply-form {
-  margin-top: 80px;
-}
-
-.comment-reply-form input,
-.comment-reply-form textarea {
-  height: 35px;
-  border-radius: 0;
-  box-shadow: none;
-}
-
-.comment-reply-form input:focus,
-.comment-reply-form textarea:focus {
-  box-shadow: none;
-  border: 1px solid #a9c479;
-}
-
-.comment-reply-form textarea,
-.comment-reply-form .btn-main {
-  height: auto;
-}
 
 /*=================================================================
   Footer section
@@ -2200,21 +1428,6 @@ a:hover {
   .member-info ul li {
     margin-right: 10px;
   }
-
-  /* testimonial */
-  .client-info {
-    width: 55%;
-  }
-
-  /* blog page */
-  .tab-post-nav li a {
-    padding: 15px 8px;
-  }
-
-  /* single blog page */
-  .author-bio h5 {
-    margin-left: 70px;
-  }
 }
 
 /*============================================================
@@ -2274,32 +1487,6 @@ a:hover {
   .skill-chart>h3 {
     margin: 15px 0;
   }
-
-  /* pricing table */
-  .pricing {
-    margin: 0 auto 30px;
-    width: 300px;
-  }
-
-  /* testimonial */
-  .client-info {
-    width: 75%;
-  }
-
-  /* latest posts */
-  .note {
-    margin-bottom: 30px;
-  }
-
-  /* blog page */
-  .tab-post-nav li a {
-    padding: 10px;
-  }
-
-  /* singla blog page */
-  .author-social {
-    margin-left: 0;
-  }
 }
 
 /*============================================================
@@ -2333,12 +1520,6 @@ a:hover {
     margin: 5px 5px 5px 0;
   }
 
-  /* fun facts */
-  /* services */
-  #services .title {
-    padding-bottom: 60px;
-  }
-
   /* our skills */
   .skill-chart {
     margin: 0 auto 40px;
@@ -2358,40 +1539,6 @@ a:hover {
   .member-info ul {
     text-align: center;
     margin-bottom: 10px;
-  }
-
-  /* pricing table */
-  .pricing {
-    margin: 0 auto 20px;
-    width: 280px;
-  }
-
-  /* portfolio */
-  .portfolio-filter ul li a {
-    margin: 0 10px 10px 0;
-    padding: 5px 10px;
-  }
-
-  /* testimonials */
-  .sub-title h3 {
-    font-size: 18px;
-  }
-
-  .client-info {
-    width: 100%;
-  }
-
-  /* latest posts */
-  .note {
-    margin-bottom: 30px;
-  }
-
-  .note .excerpt {
-    padding: 0 20px 20px;
-  }
-
-  .all-post {
-    margin: 20px 0 30px;
   }
 
   /* contact */
@@ -2417,19 +1564,6 @@ a:hover {
   .social-icon ul li a i {
     font-size: 24px;
     line-height: 50px;
-  }
-
-  .blog-title h1 {
-    font-size: 28px;
-  }
-
-  /* blog page */
-  #blog-page {
-    margin: 0;
-  }
-
-  #blog-posts {
-    margin: 0 0 40px;
   }
 
   .post-excerpt h3 {
@@ -2493,11 +1627,6 @@ a:hover {
     width: 300px;
   }
 
-  /* pricing table */
-  .pricing {
-    margin: 0 auto 30px;
-    width: 350px;
-  }
 
   /* testimonials */
   .client-info {
@@ -2646,21 +1775,21 @@ a:hover {
     padding: 0 auto;
   }
 
-  .button-section{
+  .button-section {
     padding: 0 2em;
   }
-  
+
   .button-section .content {
     width: 100%;
     margin-bottom: 20px;
   }
-  
+
   .button-section .btn {
     width: 100%;
   }
 }
 
-.button-section{
+.button-section {
   padding: 0 2em;
 }
 
@@ -2673,4 +1802,3 @@ a:hover {
   width: 100%;
   margin-bottom: 10px;
 }
-

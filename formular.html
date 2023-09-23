@@ -6,7 +6,7 @@
   <!-- Basic Page Needs
   ================================================== -->
   <meta charset="utf-8" />
-  <title>Nomad Adventure - Formular</title>
+  <title>Formular - Nomad Adventure</title>
 
   <!-- Mobile Specific Metas
   ================================================== -->
@@ -35,6 +35,11 @@
   <!-- WhatsApp Stylesheet-->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+
+  <!-- GOOGLE SHEETS API SCRIPT-->
+  <script src="https://apis.google.com/js/client.js"></script>
+  <script src="js/googleapi.js"></script>
+  
 </head>
 
 <body id="body">
@@ -89,11 +94,31 @@ Fixed Navigation
                 Tabere <i class="tf-ion-chevron-down"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="tabara1.html">NOMAD PE TRANSFĂGĂRĂȘAN</a>
+                <li class="dropdown dropdown-submenu dropright">
+                  <a class="dropdown-item dropdown-toggle" href="tabara1.html" id="dropdown0501" role="button"
+                    aria-haspopup="true" aria-expanded="false">
+                    Nomad pe Transfăgărășan <i class="tf-ion-chevron-down"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown0501">
+                    <li><a class="dropdown-item" href="regulament.html">Regulament</a></li>
+                    <li><a class="dropdown-item" href="documente.html">Documente necesare</a></li>
+                    <li><a class="dropdown-item" href="rezervare.html">Procedura de rezervare</a></li>
+                    <li><a class="dropdown-item" href="tabara1/necesar_bagaj.html">Necesar bagaj</a></li>
+                    <li><a class="dropdown-item" href="tabara1/meniu_tabara.html">Meniul taberei</a></li>
+                    <li><a class="dropdown-item" href="tabara1/perioade.html">Perioade tabără</a></li>
+                  </ul>
                 </li>
-                <li>
-                  <a class="dropdown-item" href="tabara2.html">Tabăra 2</a>
+                <li class="dropdown dropdown-submenu dropright">
+                  <a class="dropdown-item dropdown-toggle" href="tabara2.html" id="dropdown0501" role="button"
+                    aria-haspopup="true" aria-expanded="false">Nomad pe ...<i class="tf-ion-chevron-down"></i></a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown0501">
+                    <li><a class="dropdown-item" href="regulament.html">Regulament</a></li>
+                    <li><a class="dropdown-item" href="documente.html">Documente necesare</a></li>
+                    <li><a class="dropdown-item" href="rezervare.html">Procedura de rezervare</a></li>
+                    <li><a class="dropdown-item" href="tabara2/necesar_bagaj.html">Necesar bagaj</a></li>
+                    <li><a class="dropdown-item" href="tabara2/meniu_tabara.html">Meniul taberei</a></li>
+                    <li><a class="dropdown-item" href="tabara2/perioade.html">Perioade tabără</a></li>
+                  </ul>
                 </li>
               </ul>
             </li>
@@ -140,7 +165,7 @@ End Fixed Navigation
 
     <!-- Contact Form -->
     <div class="contact-form col-md-6">
-      <form id="contact-form" method="post" role="form">
+      <form id="myForm" method="post" role="form">
         <div class="form-group mb-4">
           <input type="text" placeholder="Nume" class="form-control" name="name" id="name" required />
         </div>
@@ -166,7 +191,7 @@ End Fixed Navigation
         <p>Locația dorită:</p>
         <div class="form-group mb-4">
           <input list="tabere">
-          <datalist id="tabere">
+          <datalist id="tabara">
             <option value="NOMAD PE TRANSFĂGĂRĂȘAN">
             <option value="Nomad pe ...">
           </datalist>
@@ -176,7 +201,7 @@ End Fixed Navigation
 
         <div class="form-group mb-4">
           <input list="weeks_camp">
-          <datalist id="weeks_camp">
+          <datalist id="weeks_camps">
             <option value="Saptamana 1">
             <option value="Saptamana 2">
             <option value="Saptamana 3">
@@ -188,7 +213,7 @@ End Fixed Navigation
 
         <div class="form-group mb-4">
           <input list="responsable">
-          <datalist id="responsable">
+          <datalist id="responsable_individual">
             <option value="Profesor">
             <option value="Părinte">
           </datalist>
@@ -211,28 +236,28 @@ End Fixed Navigation
         </div>
 
         <div class="form-group mb-4">
-          <input type="checkbox" id="all_terms" name="all_terms" required />
+          <input type="checkbox" id="rules" name="rules" required />
           <label for="accept_terms"> Declar că am citit <a href="regulament.pdf"
               download="NomadAdventure_Regulament.pdf">regulamentul</a> și sunt de acord cu el în totalitate.</label>
         </div>
 
         <div class="form-group mb-4">
-          <input type="checkbox" id="all_terms" name="all_terms" required />
+          <input type="checkbox" id="messages" name="messages" required />
           <label for="accept_terms"> Doresc să primesc mesaje promoționale.</label>
         </div>
 
         <div class="form-group mb-4">
-          <input type="checkbox" id="all_terms" name="all_terms" required />
+          <input type="checkbox" id="emails" name="emails" required />
           <label for="accept_terms"> Doresc să primesc e-mailuri promoționale.</label>
         </div>
 
         <div class="form-group mb-4">
-          <input type="checkbox" id="all_terms" name="all_terms" required />
+          <input type="checkbox" id="newsletter" name="newsletter" required />
           <label for="accept_terms"> Mă abonez la Newsletter.</label>
         </div>
 
         <div id="cf-submit">
-          <input type="submit" id="contact-submit" class="btn btn-transparent" value="Trimite" />
+          <input type="submit" id="submit" class="btn btn-transparent" value="Trimite" />
         </div>
       </form>
     </div>
@@ -326,6 +351,7 @@ End Fixed Navigation
 
   <!-- Custom js -->
   <script src="js/script.js"></script>
+
 </body>
 
 </html>
