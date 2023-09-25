@@ -1802,3 +1802,53 @@ a:hover {
   width: 100%;
   margin-bottom: 10px;
 }
+
+#form {
+  background-color: transparent;
+  border: 1px solid #a9c479;
+  width: 300px;
+  height: 44px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#query {
+  all: unset;
+  font: 16px system-ui;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+
+svg {
+  color: #fff;
+  fill: currentColor;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+}
+
+.searchicon {
+  all: unset;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+
+#search {
+  width: 100%; /* Set the initial width to 100% */
+}
+
+@media screen and (min-width: 768px) {
+  #search {
+    width: 300px; /* Set a fixed width for larger screens */
+  }
+}

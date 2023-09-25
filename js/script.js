@@ -37,100 +37,6 @@
   $(".hero-slider").slickAnimation();
 
   /* ========================================================================= */
-  /*	Portfolio Filtering Hook
-  /* =========================================================================  */
-  // filter
-  setTimeout(function () {
-    var containerEl = document.querySelector(".filtr-container");
-    var filterizd;
-    if (containerEl) {
-      filterizd = $(".filtr-container").filterizr({});
-    }
-  }, 500);
-
-  /* ========================================================================= */
-  /*	Testimonial Carousel
-  /* =========================================================================  */
-  //Init the slider
-  $(".testimonial-slider").slick({
-    infinite: true,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 2000,
-  });
-
-  /* ========================================================================= */
-  /*	Clients Slider Carousel
-  /* =========================================================================  */
-  //Init the slider
-  $(".clients-logo-slider").slick({
-    infinite: true,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          arrows: false,
-        },
-      },
-    ],
-  });
-
-  /* ========================================================================= */
-  /*	Company Slider Carousel
-  /* =========================================================================  */
-  $(".company-gallery").slick({
-    infinite: true,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false,
-        },
-      },
-      {
-        breakpoint: 667,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          arrows: false,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          arrows: false,
-        },
-      },
-    ],
-  });
-
-  /* ========================================================================= */
   /*	On scroll fade/bounce effect
   /* ========================================================================= */
   var scroll = new SmoothScroll('a[href*="#"]');
@@ -194,5 +100,23 @@
       arrow[i].classList.toggle("arrow-rotated");
     });
   }
+
+  // ----------------------------
+  // SEARCH BAR
+  // ----------------------------
+
+  const f = document.getElementById('form');
+  const q = document.getElementById('query');
+  const google = 'https://www.google.com/search?q=site%3A+';
+  const site = 'nomadadventure.ro';
+
+  function submitted(event) {
+    event.preventDefault();
+    const url = google + site + '+' + q.value;
+    const win = window.open(url, '_blank');
+    win.focus();
+  }
+
+  f.addEventListener('submit', submitted);
 
 })(jQuery);
