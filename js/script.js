@@ -4,7 +4,7 @@
   /* ========================================================================= */
   /*	Page Preloader
   /* ========================================================================= */
-  
+
   $(window).on("load", function () {
     $("#preloader").fadeOut("slow", function () {
       $(this).remove();
@@ -164,7 +164,7 @@
     });
 
     const resultsList = document.getElementById('resultsList');
-    resultsList.innerHTML = ""; 
+    resultsList.innerHTML = "";
     if (results.length > 0) {
       results.forEach(result => {
         const li = document.createElement('li');
@@ -197,6 +197,22 @@
       q.classList.remove('invert-colors');
       document.querySelector('svg').classList.remove('invert-colors');
     }
+  });
+
+  // ----------------------------
+  // FORMULAR
+  // ----------------------------
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const checkAll = document.getElementById("all_terms");
+    const checkItems = document.querySelectorAll(".check-item");
+
+    checkAll.addEventListener("change", function () {
+      const isChecked = checkAll.checked;
+      checkItems.forEach(item => {
+        item.checked = isChecked;
+      });
+    });
   });
 
 })(jQuery);
