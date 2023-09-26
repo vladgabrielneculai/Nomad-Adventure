@@ -4,6 +4,7 @@
   /* ========================================================================= */
   /*	Page Preloader
   /* ========================================================================= */
+  
   $(window).on("load", function () {
     $("#preloader").fadeOut("slow", function () {
       $(this).remove();
@@ -44,6 +45,7 @@
   // -----------------------------
   //  Count Up
   // -----------------------------
+
   function counter() {
     var oTop;
     if ($(".counter").length !== 0) {
@@ -73,9 +75,11 @@
       });
     }
   }
+
   // -----------------------------
   //  On Scroll
   // -----------------------------
+
   $(window).scroll(function () {
     counter();
 
@@ -90,6 +94,7 @@
   // -----------------------------
   //  FAQ & CAMPS
   // -----------------------------
+
   const question = document.querySelectorAll(".question");
   const answer = document.querySelectorAll(".answer");
   const arrow = document.querySelectorAll(".arrow");
@@ -110,8 +115,6 @@
     hour = minute * 60,
     day = hour * 24;
 
-  //I'm adding this section so I don't have to keep updating this pen every year :-)
-  //remove this if you don't need it
   let today = new Date(),
     dd = String(today.getDate()).padStart(2, "0"),
     mm = String(today.getMonth() + 1).padStart(2, "0"),
@@ -124,7 +127,6 @@
   if (today > campdate) {
     campdate = dayMonth + nextYear;
   }
-  //end
 
   const countDown = new Date(campdate).getTime(),
     x = setInterval(function () {
@@ -136,10 +138,8 @@
         document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
         document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
         document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
-        
-      //seconds
     }, 0);
-    
+
   // ----------------------------
   // SEARCH BAR
   // ----------------------------
@@ -163,9 +163,8 @@
       }
     });
 
-    // Afișăm rezultatele în lista de rezultate
     const resultsList = document.getElementById('resultsList');
-    resultsList.innerHTML = ""; // Curățăm lista
+    resultsList.innerHTML = ""; 
     if (results.length > 0) {
       results.forEach(result => {
         const li = document.createElement('li');
@@ -181,7 +180,6 @@
       resultsList.appendChild(li);
     }
 
-    // Afișăm containerul rezultatelor
     const searchResults = document.getElementById('searchResults');
     searchResults.style.display = 'block';
   }
@@ -193,11 +191,9 @@
     var documentHeight = document.documentElement.scrollHeight;
 
     if (scrollPosition >= documentHeight) {
-      // Adaugă CSS class pentru text și iconiță la input și la svg
       q.classList.add('invert-colors');
       document.querySelector('svg').classList.add('invert-colors');
     } else {
-      // Elimină CSS class pentru text și iconiță de la input și svg
       q.classList.remove('invert-colors');
       document.querySelector('svg').classList.remove('invert-colors');
     }
