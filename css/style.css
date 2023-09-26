@@ -1865,7 +1865,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 @media screen and (min-width: 768px) {
   .searchbar-section {
-    width: 300px;
+    width: 100px;
     /* Set a fixed width for larger screens */
   }
 }

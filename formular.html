@@ -165,32 +165,32 @@ End Fixed Navigation
 
     <!-- Contact Form -->
     <div class="contact-form col-md-6">
-      <form id="myForm" method="post" role="form">
+      <form id="myForm" action="https://sheetdb.io/api/v1/6ce5eqcjxkiqb" method="post" role="form">
         <div class="form-group mb-4">
-          <input type="text" placeholder="Nume" class="form-control" name="name" id="name" required />
+          <input type="text" placeholder="Nume" class="form-control" name="data[Nume]" id="name" required />
         </div>
 
         <div class="form-group mb-4">
-          <input type="text" placeholder="Prenume" class="form-control" name="surname" id="surname" required />
+          <input type="text" placeholder="Prenume" class="form-control" name="data[Prenume]" id="surname" required />
         </div>
 
         <div class="form-group mb-4">
-          <input type="text" placeholder="Oraș" class="form-control" name="city" id="city" required />
+          <input type="text" placeholder="Oraș" class="form-control" name="data[Oraș]" id="city" required />
         </div>
 
         <div class="form-group mb-4">
-          <input type="email" placeholder="Adresă de email" class="form-control" name="email" id="email" required />
+          <input type="email" placeholder="Adresă de email" class="form-control" name="data[Adresă de email]" id="email" required />
         </div>
 
         <div class="form-group mb-4">
-          <input type="text" placeholder="Număr de telefon" class="form-control" name="phone_number" id="phone_number"
+          <input type="text" placeholder="Număr de telefon" class="form-control" name="data[Număr de telefon]" id="phone_number"
             required />
         </div>
 
 
         <p>Locația dorită:</p>
         <div class="form-group mb-4">
-          <input list="tabere">
+          <input list="tabere" name="data[Locația dorită]">
           <datalist id="tabara">
             <option value="NOMAD PE TRANSFĂGĂRĂȘAN">
             <option value="Nomad pe ...">
@@ -200,7 +200,7 @@ End Fixed Navigation
         <p>Perioada dorită:</p>
 
         <div class="form-group mb-4">
-          <input list="weeks_camp">
+          <input list="weeks_camp" name="data[Perioada dorită]">
           <datalist id="weeks_camps">
             <option value="Saptamana 1">
             <option value="Saptamana 2">
@@ -212,7 +212,7 @@ End Fixed Navigation
         <p>Calitate:</p>
 
         <div class="form-group mb-4">
-          <input list="responsable">
+          <input list="responsable" name="data[Calitate]">
           <datalist id="responsable_individual">
             <option value="Profesor">
             <option value="Părinte">
@@ -221,14 +221,13 @@ End Fixed Navigation
 
         <div class="form-group mb-4">
           <label for=""> Număr aproximativ de copii participanți: </label>
-          <input type="number" id="number_kids" name="number_kids" min="1" max="150" />
+          <input type="number" id="number_kids" name="data[Număr copii]" min="1" max="150" />
         </div>
 
         <div class="form-group mb-4">
           <label for=""> Număr aproximativ de cadre didactice: </label>
-          <input type="number" id="number_teachers" name="number_teachers" min="1" max="150" />
+          <input type="number" id="number_teachers" name="data[Număr cadre]" min="1" max="150" />
         </div>
-
 
         <div class="form-group mb-4">
           <input type="checkbox" id="all_terms" name="all_terms" required />
