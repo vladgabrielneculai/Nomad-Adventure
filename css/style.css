@@ -406,8 +406,8 @@ a:hover {
   display: inline-block;
 }
 
-.single-page-header {
-  background-image: url("../images/about/about-header.jpg");
+.luggage-header {
+  background-image: url("../images/banners/Bagaj\ tabara\ la\ munte\ perfect\ ploaie\ valiza\ pachet\ ce\ trebuie\ sa\ contina\ bagajul\ copilului\ meu\ de\ tabara\ continut\ bagaj\ tabara\ bagaj\ usor\ de\ facut\ pentru\ tabara\ de\ vara\ esentiale\ tabara.png");
   background-size: cover;
   padding: 140px 0 70px;
   text-align: center;
@@ -415,7 +415,121 @@ a:hover {
   position: relative;
 }
 
-.single-page-header:before {
+.luggage-header:before {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.team-header {
+  background-image: url("../images/banners/Echipa\ echipa\ de\ animatori\ echipa\ de\ instructori\ echipa\ de\ ghizi\ echipa\ de\ verzisori\ echipa\ taberei\ echipa\ de\ animatori.png");
+  background-size: cover;
+  padding: 140px 0 70px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.team-header:before {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.faq-header {
+  background-image: url("../images/banners/Întrebări\ curiozitati\ despre\ tabara\ nomad\ cum\ e\ in\ tabara\ regulile\ taberei\ program\ tabara\ ce\ fac\ in\ tabara\ acord\ parental\ tabara\ esentiale\ tabara.png");
+  background-size: cover;
+  padding: 140px 0 70px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.faq-header:before {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.foodmenu-header {
+  background-image: url("../images/banners/Meniu\ meniu\ tabara\ mancare\ tabara\ ce\ mananca\ copii\ in\ tabara\ tabara\ nomad\ mancare\ supa\ ciorba\ cartofi\ pui\ meniu\ simplu\ meniu\ delicios.png");
+  background-size: cover;
+  padding: 140px 0 70px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.foodmenu-header:before {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.rules-header {
+  background-image: url("../images/banners/Regulament\ tabara\ nomad.png");
+  background-size: cover;
+  padding: 140px 0 70px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.rules-header:before {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.camps-header {
+  background-image: url("../images/banners/Tabere\ la\ munte\ tabere\ in\ natura\ tabara\ aventura\ tabara\ activitati\ activitati\ de\ vara\ vara\ la\ munte\ tabere\ de\ dezvoltare\ personala\ tabere\ la\ munte\ tabere\ arges\ lacul\ vidraru\ muzeu.png");
+  background-size: cover;
+  padding: 140px 0 70px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.camps-header:before {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.contact-header {
+  background-image: url("../images/banners/Contact\ contact\ nomad\ contact\ nomad\ adventure\ pagina\ de\ contact\ nomad\ telefon\ email\ instagram\ facebook\ retele\ de\ socializare\ rezervare\ tabara\ rezervare\ loc.png");
+  background-size: cover;
+  padding: 140px 0 70px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.contact-header:before {
   background: rgba(0, 0, 0, 0.8);
   position: absolute;
   content: "";
@@ -1883,7 +1997,6 @@ input[type="search"]::-webkit-search-cancel-button {
 .countdown h1 {
   font-weight: normal;
   letter-spacing: .125rem;
-  text-transform: uppercase;
 }
 
 .countdown li {
@@ -1911,4 +2024,139 @@ input[type="search"]::-webkit-search-cancel-button {
   .countdown li span {
     font-size: calc(3.375rem * var(--smaller));
   }
+}
+
+.popup-trigger {
+  display: block;
+  width: 170px;
+  right: 2rem;
+  margin: 3em auto;
+  text-align: center;
+  color: #FFF;
+  font-size: 18px;
+  padding:1rem 2rem;
+  text-decoration:none;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 50em;
+  background: #35a785;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.07);
+  transition:300ms all;
+}
+
+.popup-trigger:hover {
+    opacity:.8;
+}
+
+.popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 1000;
+  width: 100%;
+  background-color: rgba(94, 110, 141, 0.9);
+  opacity: 0;
+  visibility: hidden;
+  transition:500ms all;
+
+}
+
+.popup.is-visible {
+  opacity: 1;
+  visibility: visible;
+ transition:1s all;
+}
+
+.popup-container {
+  transform:translateY(-50%);
+  transition:500ms all;
+  position: relative;
+  width: 40%;
+  margin: 2em auto;
+  top: 5%;
+  padding:5rem;
+  background: #FFF;
+  border-radius: .25em .25em .4em .4em;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.is-visible .popup-container {
+  transform:translateY(0);
+  transition:500ms all;
+}
+
+.popup-container .popup-close {
+  position: absolute;
+  top: 8px;
+  font-size:0;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+}
+
+
+.popup-container .popup-close::before,
+.popup-container .popup-close::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  width: 14px;
+  height: 3px;
+  background-color: #8f9cb5;
+}
+
+.popup-container .popup-close::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 8px;
+}
+
+.popup-container .popup-close::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  right: 8px;
+}
+
+
+.popup-container .popup-close:hover:before,
+.popup-container .popup-close:hover:after {
+  background-color:#35a785;
+  transition:300ms all;
+}
+
+/* TEMPORAR */
+.single-page-header {
+  background-image: url("../images/about/about-header.jpg");
+  background-size: cover;
+  padding: 140px 0 70px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.single-page-header:before {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+
+}
+/*! TEMPORAR!*/
+
+.campdays-images{
+  max-width: 100%;
+  height: auto;
+  padding: 1em 1em;
 }

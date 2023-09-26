@@ -88,7 +88,7 @@
   });
 
   // -----------------------------
-  //  FAQ
+  //  FAQ & CAMPS
   // -----------------------------
   const question = document.querySelectorAll(".question");
   const answer = document.querySelectorAll(".answer");
@@ -101,9 +101,9 @@
     });
   }
 
-  //
-  // COUNTDOWN
-  // 
+  // -----------------------------
+  //  COUNTDOWN
+  // -----------------------------
 
   const second = 1000,
     minute = second * 60,
