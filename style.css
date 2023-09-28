@@ -1,0 +1,167 @@
+@font-face {
+  font-family: Tex Gyre Pagella;
+  src: url(texgyrepagella-regular-nomadadventure.woff);
+}
+
+body {
+  background-color: #a9c479;
+  color: black;
+}
+
+@keyframes fadeIn {
+  from {
+    top: 20%;
+    opacity: 0;
+  }
+  to {
+    top: 100;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    top: 20%;
+    opacity: 0;
+  }
+  to {
+    top: 100;
+    opacity: 1;
+  }
+}
+
+.wrapper {
+  padding: 20px; /* Default padding for larger screens */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  animation: fadeIn 1000ms ease;
+  -webkit-animation: fadeIn 1000ms ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.wrapper img {
+  margin-top: 25px;
+}
+
+.wrapper h1 {
+  font-size: 30px; /* Default font size for h1 */
+  font-family: Tex Pyre Pagella;
+}
+
+.wrapper p {
+  font-family: Tex Pyre Pagella;
+  font-weight: normal;
+}
+
+.wrapper h3 {
+  font-size: 20px; /* Default font size for h3 */
+  font-family: Tex Pyre Pagella;
+}
+
+/* Media query for screens with a maximum width of 768px (adjust as needed) */
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  h1 {
+    font-size: 20px; /* Reduce font size for h1 on smaller screens */
+  }
+
+  .wrapper p {
+    font-size: 16px; /* Reduce font size for paragraphs on smaller screens */
+    width: 325px;
+  }
+
+  .wrapper h3{
+    font-size: 19px;
+  }
+
+  .wrapper img {
+    margin-top: 15px; /* Adjust margin for smaller screens */
+  }
+
+  .offer a {
+    font-size: 14px; /* Reduce font size for offer links on smaller screens */
+  }
+}
+
+.icons {
+  text-align: center;
+}
+
+.icons i {
+  color: #00091b;
+  background: #fff;
+  height: 15px;
+  width: 15px;
+  padding: 13px;
+  margin: 0 10px;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  transition: all 200ms ease;
+  text-decoration: none;
+  position: relative;
+}
+
+.icons i:hover,
+.icons i:active {
+  color: #fff;
+  background: none;
+  cursor: pointer !important;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  text-decoration: none;
+}
+
+.offer a {
+  color: #00091b;
+  background: #fff;
+  height: 50px;
+  width: 200px;
+  padding: 13px;
+  margin: 0 10px;
+  border-radius: 20px;
+  border: 2px solid #fff;
+  transition: all 200ms ease;
+  text-decoration: none;
+  position: relative;
+  font-family: Tex Pyre Pagella;
+  font-size: 15px;
+}
+
+.offer a:hover,
+.offer a:active {
+  color: #fff;
+  background: none;
+  cursor: pointer !important;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  text-decoration: none;
+}
+
+.float{
+	position:fixed;
+	width:80px;
+	height:80px;
+	bottom:30px;
+	right:30px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:45px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
