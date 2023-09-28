@@ -36,11 +36,15 @@ h6 {
   display: inline-block;
 }
 
-ol,
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+ol {
+  margin: 0;
+  padding-left: 20px;
 }
 
 figure {
@@ -1270,7 +1274,8 @@ a:hover {
   border: 2px solid #D47344;
   border-radius: 10px;
   padding: 10px;
-  margin-right: 30px; /* Spațiu între cutii (modifică după cum dorești) */
+  margin-right: 30px;
+  /* Spațiu între cutii (modifică după cum dorești) */
   margin-bottom: 20px;
   background-color: #f5f5f5;
   height: 175px;
@@ -1284,7 +1289,8 @@ a:hover {
 
 /* Stiluri pentru ultima cutie (elimină margin-right pentru ultima cutie) */
 .service-2 .service-item:last-child {
-  margin-right: 0; /* Elimină margin-right pentru ultima cutie */
+  margin-right: 0;
+  /* Elimină margin-right pentru ultima cutie */
 }
 
 .service-2 .service-item:hover {
@@ -1442,7 +1448,26 @@ a:hover {
   margin: 15px 0;
 }
 
+/*=================================================================
+  Rules section
+==================================================================*/
+.rules-section {
+  padding: 30px 100px;
+}
 
+.rules-section h1,h3{
+  padding: 10px;
+}
+
+.rules-section h5{
+  padding-top: 10px;
+}
+
+.rules-list {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
 
 /*=================================================================
   Footer section
