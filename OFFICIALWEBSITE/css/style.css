@@ -1960,30 +1960,6 @@ a:hover {
   }
 }
 
-/* TEMPORAR */
-.single-page-header {
-  background-image: url("../images/about/about-header.jpg");
-  background-size: cover;
-  padding: 140px 0 70px;
-  text-align: center;
-  color: #fff;
-  position: relative;
-}
-
-.single-page-header:before {
-  background: rgba(0, 0, 0, 0.8);
-  position: absolute;
-  content: "";
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-
-
-}
-
-/*! TEMPORAR!*/
-
 .campdays-images {
   width: 500px;
   height: 300px;
