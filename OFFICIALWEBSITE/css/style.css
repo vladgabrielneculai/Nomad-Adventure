@@ -1265,12 +1265,26 @@ a:hover {
 /*=================================================================
   Services section 2
 ==================================================================*/
+/* Stilurile generale pentru cutii */
 .service-2 .service-item {
-  border: 2px solid #a9c479;
+  border: 2px solid #D47344;
   border-radius: 10px;
-  margin-bottom: 30px;
-  padding: 50px 20px;
-  transition: all 0.3s ease 0s;
+  padding: 10px;
+  margin-right: 30px; /* Spațiu între cutii (modifică după cum dorești) */
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  height: 175px;
+  width: 185px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+/* Stiluri pentru ultima cutie (elimină margin-right pentru ultima cutie) */
+.service-2 .service-item:last-child {
+  margin-right: 0; /* Elimină margin-right pentru ultima cutie */
 }
 
 .service-2 .service-item:hover {
@@ -1280,13 +1294,13 @@ a:hover {
 
 .service-2 .service-item:hover i {
   background: #fff;
-  color: #a9c479;
+  color: #D47344;
 }
 
 .service-2 .service-item i {
   font-size: 30px;
   display: inline-block;
-  background: #a9c479 none repeat scroll 0 0;
+  background: #D47344 none repeat scroll 0 0;
   border-radius: 30px;
   box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.1);
   color: #fff;
