@@ -520,7 +520,7 @@ a:hover {
   bottom: 0;
 }
 
-.trans-header {
+.transfagarasan-header {
   background-image: url("../images/banners/Tabara\ trans\ .png");
   background-size: cover;
   padding: 200px 0 100px;
@@ -529,7 +529,7 @@ a:hover {
   position: relative;
 }
 
-.trans-header:before {
+.transfagarasan-header:before {
   background: rgba(0, 0, 0, 0.8);
   position: absolute;
   content: "";
