@@ -448,7 +448,7 @@ a:hover {
   bottom: 0;
 }
 
-.faq-header {
+.faq-banner {
   background-image: url("../images/banners/Întrebări\ curiozitati\ despre\ tabara\ nomad\ cum\ e\ in\ tabara\ regulile\ taberei\ program\ tabara\ ce\ fac\ in\ tabara\ acord\ parental\ tabara\ esentiale\ tabara.png");
   background-size: cover;
   padding: 250px 0 100px;
@@ -457,7 +457,7 @@ a:hover {
   position: relative;
 }
 
-.faq-header:before {
+.faq-banner:before {
   background: rgba(0, 0, 0, 0.8);
   position: absolute;
   content: "";
@@ -1461,6 +1461,12 @@ a:hover {
 
 .rules-section h5{
   padding-top: 10px;
+}
+
+.rules-section ul{
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
 }
 
 .rules-list {
