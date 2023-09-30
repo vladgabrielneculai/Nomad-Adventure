@@ -562,6 +562,65 @@ a:hover {
   bottom: 0;
 }
 
+.foodmenu-header {
+  background-image: url("../images/banners/Meniu\ meniu\ tabara\ mancare\ tabara\ ce\ mananca\ copii\ in\ tabara\ tabara\ nomad\ mancare\ supa\ ciorba\ cartofi\ pui\ meniu\ simplu\ meniu\ delicios.png");
+  background-size: cover;
+  padding: 250px 0 100px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.foodmenu-header:before {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.periods-header {
+  background-image: url("../images/banners/perioade.png");
+  background-size: cover;
+  padding: 250px 0 100px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.periods-header:before {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.documents-header {
+  background-image: url("../images/banners/doc\ necesare.png");
+  background-size: cover;
+  padding: 250px 0 100px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.documents-header:before {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+
+
 /*=================================================================
   Navigation
 ==================================================================*/
