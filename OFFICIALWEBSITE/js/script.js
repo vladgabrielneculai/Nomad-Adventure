@@ -92,7 +92,7 @@
   });
 
   // -----------------------------
-  //  FAQ & CAMPS
+  //  FAQ
   // -----------------------------
 
   const question = document.querySelectorAll(".question");
@@ -183,5 +183,19 @@
       numTeachersInput.disabled = false;
     }
   });
+
+  // CAMPS
+
+  const discover = document.querySelectorAll(".discover");
+  const campday = document.querySelectorAll(".campdaydescription");
+  const discoverarrow = document.querySelectorAll(".discoverarrow");
+
+  for (let i = 0; i < discover.length; i++) {
+    discover[i].addEventListener("click", () => {
+      campday[i].classList.toggle("campdaydescription-opened");
+      discoverarrow[i].classList.toggle("discoverarrow-rotated");
+    });
+  }
+
 
 })(jQuery);
