@@ -1277,6 +1277,76 @@ a:hover {
   color: white;
 }
 
+.custom-model-main {
+  text-align: center;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: opacity 0.15s linear, z-index 0.15s;
+}
+
+.model-open {
+  z-index: 99999;
+  opacity: 1;
+  overflow: hidden;
+}
+
+.custom-model-inner {
+  transform: translate(0, -25%);
+  transition: transform 0.3s ease-out;
+  display: inline-block;
+  vertical-align: middle;
+  width: 600px;
+  margin: 30px auto;
+  max-width: 97%;
+}
+
+.custom-model-wrap {
+  display: block;
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #999;
+  border-radius: 6px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+  outline: 0;
+  text-align: left;
+  padding: 20px;
+  box-sizing: border-box;
+  max-height: calc(100vh - 70px);
+  overflow-y: auto;
+}
+
+.close-btn {
+  position: absolute;
+  right: 0;
+  top: -30px;
+  cursor: pointer;
+  font-size: 30px;
+  color: #fff;
+}
+
+.bg-overlay {
+  background: rgba(0, 0, 0, 0);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  transition: background 0.15s linear;
+}
+
+
 /*=================================================================
   Item counter section
 ==================================================================*/
@@ -1374,7 +1444,7 @@ a:hover {
   transition: all 0.3s ease 0s;
 }
 
-.service-item h4{
+.service-item h4 {
   color: #D47344;
 }
 
@@ -1627,11 +1697,11 @@ h3 {
 	TRANSFĂGĂRĂȘAN PERIODS
 ==============================================================*/
 
-.periods-section{
- padding: 4em 2em;
+.periods-section {
+  padding: 4em 2em;
 }
 
-.periods-list{
+.periods-list {
   padding: 1em 2em;
   line-height: 2;
   font-size: 17px;
@@ -1647,7 +1717,7 @@ h3 {
   padding: 20px;
 }
 
-.center-button{
+.center-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1690,7 +1760,8 @@ emoji {
 
 /* Stil pentru emoji la fiecare fel de mâncare */
 .dinner li:before {
-  content: "-"; /* Adăugați emoji-ul pentru tacâmuri */
+  content: "-";
+  /* Adăugați emoji-ul pentru tacâmuri */
   position: absolute;
   left: 0;
   top: 0;
@@ -1711,7 +1782,8 @@ emoji {
 
 /* Stil pentru emoji la fiecare fel de mâncare din prânz */
 .lunch li:before {
-  content: "-"; /* Adăugați emoji-ul pentru tacâmuri */
+  content: "-";
+  /* Adăugați emoji-ul pentru tacâmuri */
   position: absolute;
   left: 0;
   top: 0;
@@ -1721,11 +1793,11 @@ emoji {
 	LUGGAGE LIST
 ==============================================================*/
 
-.luggage-section{
+.luggage-section {
   padding: 4em 6em;
 }
 
-.luggage-list{
+.luggage-list {
   line-height: 1.5;
 }
 

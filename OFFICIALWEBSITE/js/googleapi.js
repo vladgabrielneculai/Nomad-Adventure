@@ -17,10 +17,10 @@ e.preventDefault();
   var formData = new FormData(form);
 
   formData.set("data[Accept termenii]", alltermsValue);
-  formData.set("data[Regulament]", alltermsValue);
-  formData.set("data[Mesaje promo]", alltermsValue);
-  formData.set("data[Email promo]", alltermsValue);
-  formData.set("data[Newsletter]", alltermsValue);
+  formData.set("data[Regulament]", rulesValue);
+  formData.set("data[Mesaje promo]", promomsgValue);
+  formData.set("data[Email promo]", promomailValue);
+  formData.set("data[Newsletter]", newsletterValue);
 
 fetch(form.action, {
   method: "POST",
