@@ -4,10 +4,9 @@ var rules = document.getElementById("rules");
 var promomsg = document.getElementById("messages");
 var promomail = document.getElementById("emails");
 var newsletter = document.getElementById("newsletter");
-var confirmationMessage = document.getElementById("confirmationMessage");
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
+form.addEventListener("submit",e =>{
+e.preventDefault();
 
   var alltermsValue = allterms.checked ? "da" : "nu";
   var rulesValue = rules.checked ? "da" : "nu";
@@ -27,25 +26,27 @@ form.addEventListener("submit", function (e) {
     method: "POST",
     body: formData,
   })
-    .then(function (response) {
-      if (response.ok) {
-        return response.json(); // Parse the response data
-      } else {
-        throw new Error('API request failed');
-      }
-    })
-    .then(function (data) {
-      if (data.created === 1) {
-        // Clear form inputs
-        form.reset();
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+    if (data.result === "success") {
+      // Handle the success response as needed
+      alert("Success!");
 
-        // Show confirmation message
-        confirmationMessage.style.display = "block";
-      } else {
-        throw new Error('API request did not create data');
-      }
-    })
-    .catch(function (error) {
-      console.error("Error:", error);
-    });
+      // Extract the row information if necessary
+      var row = data.row;
+
+      // Set a timer to redirect after 2 seconds (adjust as needed)
+      setTimeout(function () {
+        window.location.href = "contact.html"; // Replace with your page URL
+      }, 2000); // 2000 milliseconds (2 seconds) delay before redirecting
+    } else {
+      // Handle the case where the form submission was not successful
+      alert("Form submission failed.");
+    }
+  });
 });
+
+function resetForm() {
+  form.reset();
+}

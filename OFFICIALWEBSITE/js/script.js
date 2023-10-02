@@ -157,7 +157,7 @@
   });
 
   // Obțineți referințele la elementele formularului
-  const qualityInput = document.querySelector('input[name="data[Calitate]"]');
+  const qualityInput = document.querySelector('input[name="Calitate"]');
   const numKidsInput = document.getElementById('number_kids');
   const numTeachersInput = document.getElementById('number_teachers');
 

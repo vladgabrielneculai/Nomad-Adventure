@@ -75,8 +75,8 @@ a:hover {
   color: #ddd;
 }
 
-.section{
-  padding:100px 0;
+.section {
+  padding: 100px 0;
 }
 
 #preloader {
@@ -1318,6 +1318,7 @@ emoji {
 
 .center-first-row {
   justify-content: center;
+  text-align: center;
 }
 
 /*============================================================
@@ -1470,318 +1471,179 @@ div.answer img {
 ==============================================================*/
 
 @media (max-width: 991px) {
+
+  /* NAVIGATION */
+
   .navigation .nav-link {
-      padding: 6px !important;
+    padding: 6px !important;
   }
 
   .navigation .navbar-collapse.show {
-      overflow-y: auto;
-      max-height: calc(100vh - 55px);
+    overflow-y: auto;
+    max-height: calc(100vh - 55px);
   }
 
   .navigation .dropdown-menu {
-      display: none;
-      opacity: 1;
-      visibility: visible;
-      text-align: center;
-      transition: 0s;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+    text-align: center;
+    transition: 0s;
   }
 
   .navigation .dropdown-menu.show {
-      display: block;
+    display: block;
   }
 
   .navigation .dropdown-menu {
-      float: left;
-      width: 100%;
+    float: left;
+    width: 100%;
   }
 
   .navigation {
-      box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.06);
-      background: #fff;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.06);
+    background: #fff;
   }
 
   .navigation .navbar-light .navbar-nav .nav-item .nav-link {
-      color: #000;
+    color: #000;
   }
 
   .navigation .logo-white {
-      display: none;
+    display: none;
   }
 
   .navigation .logo-default {
-      display: block;
+    display: block;
   }
 
   .navigation .navbar-light .navbar-toggler {
-      color: rgba(0, 0, 0, 0.5);
-      border-color: rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0.1);
   }
 
+  /* BANNERS */
+
+  .slider-item h1 {
+    font-size: 48px;
+    line-height: 52px;
+  }
+
+  .hero-slider .prevArrow,
+  .hero-slider .nextArrow {
+    display: none !important;
+  }
+
+ /* FAQ & CAMPS */
+
   .faq-section {
-      padding: 2em 1em;
+    padding: 2em 1em;
   }
 
   .faq li {
-      margin: 0;
-      width: 100%;
+    margin: 0;
+    width: 100%;
   }
 
   .question {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .answer {
-      padding: 0 1em;
+    padding: 0 1em;
   }
 
   .arrow {
-      display: inline-block;
-      margin: 0 0.5em;
-      width: 0;
-      height: 0;
-      border-top: 6px solid transparent;
-      border-left: 10px solid #555;
-      border-bottom: 6px solid transparent;
-      transition: 0.3s;
+    display: inline-block;
+    margin: 0 0.5em;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-left: 10px solid #555;
+    border-bottom: 6px solid transparent;
+    transition: 0.3s;
   }
 
   .faq-title {
-      padding: 0 auto;
+    padding: 0 auto;
   }
 
+  /* BUTTON */
+
   .button-section {
-      padding: 0 2em;
+    padding: 0 2em;
   }
 
   .button-section .content {
-      width: 100%;
-      margin-bottom: 10px;
+    width: 100%;
+    margin-bottom: 10px;
   }
 
   .button-section .btn {
-      width: 100%;
+    width: 100%;
   }
 
+  /* COUNTDOWN */
+
   .countdown h1 {
-      font-size: calc(1.5rem * var(--smaller));
+    font-size: 25px;
   }
 
   .countdown li {
-      font-size: calc(1.125rem * var(--smaller));
+    font-size: 20px;
   }
 
   .countdown li span {
-      font-size: calc(3.375rem * var(--smaller));
-  }
-}
-
-@media (min-width: 992px) {
-  .navigation .dropdown-submenu .dropdown-menu {
-      left: 100%;
-      top: -5px;
+    font-size: calc(3.375rem * var(--smaller));
   }
 
-  .navigation .dropleft .dropdown-menu {
-      left: auto;
-      right: 100%;
-      margin: 0;
-      top: -5px;
+  .rules-section {
+    padding: 2.5em;
   }
-}
 
-@media (max-width: 768px) {
-  .slider-item h1 {
-      font-size: 48px;
-      line-height: 52px;
+  .luggage-section {
+    padding: 2.5em;
   }
-}
+  
+  .documents-section{
+    padding: 2.5em;
+  }
+  
+  .reservation-section{
+    padding: 2.5em;
+  }
 
-@media (max-width: 480px) {
-  .slider-item h1 {
-      font-size: 38px;
-      line-height: 46px;
+  .periods-list{
+    padding: 0;
+    padding-top: 10px;
   }
-}
 
-@media (max-width: 768px) {
-  .hero-slider .prevArrow,
-  .hero-slider .nextArrow {
-      display: none !important;
+  .contact-form{
+    padding-top: 50px;
   }
-}
 
-@media (max-width: 768px) {
-  .about .feature-list li {
-      width: auto;
-      margin-right: 20px;
-  }
 }
 
 @media (min-width: 980px) and (max-width: 1150px) {
 
-  .feature-desc h3 {
-      margin-top: 0;
+.navigation .dropdown-submenu .dropdown-menu {
+    left: 100%;
+    top: -5px;
   }
 
-  .team-mate {
-      margin-bottom: 30px;
+  .navigation .dropleft .dropdown-menu {
+    left: auto;
+    right: 100%;
+    margin: 0;
+    top: -5px;
   }
 
   .mask ul {
-      top: 85px;
+    top: 85px;
   }
 
   .mask ul li {
-      margin: 0 5px;
+    margin: 0 5px;
   }
 
-  .team-mate>h4 {
-      margin-bottom: 10px;
-  }
-
-  .team-mate img {
-      margin: 0 auto;
-  }
-
-  .member-info ul li {
-      margin-right: 10px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 979px) {
-  .navbar-inverse .navbar-nav li a {
-      padding: 20px 10px;
-  }
-
-  .wrap-about {
-      margin: 0 0 75px;
-  }
-
-  .about-content {
-      margin: 0 auto;
-      width: 60%;
-  }
-
-  #counter {
-      padding-bottom: 50px;
-  }
-
-  .team-mate {
-      margin: 0 auto 30px;
-      width: 280px;
-  }
-
-  .skill-chart {
-      margin: 0 auto 40px;
-      width: 300px;
-  }
-
-  .skill-chart {
-      margin: 0 auto 40px;
-      width: 90%;
-  }
-
-  .skill-chart>h3 {
-      margin: 15px 0;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  h1 {
-      font-size: 30px;
-  }
-
-  .wrap-about {
-      margin: 0 auto 80px;
-      width: 85%;
-  }
-
-  .feature-desc a {
-      margin: 5px 5px 5px 0;
-  }
-
-  .skill-chart {
-      margin: 0 auto 40px;
-      width: 280px;
-  }
-
-  .team-mate {
-      margin: 0 auto 31px;
-      width: 280px;
-  }
-
-  .team-mate img {
-      margin: 0 auto;
-  }
-
-  .member-info ul {
-      text-align: center;
-      margin-bottom: 10px;
-  }
-
-  .contact-info {
-      margin: 0 0 30px;
-  }
-
-  #map-canvas {
-      height: 250px;
-  }
-
-  .post-excerpt h3 {
-      font-size: 20px;
-  }
-
-  .post-pagination ul li {
-      margin: 0 10px 10px 0;
-  }
-
-  .tab-post-nav li a {
-      padding: 8px 5px;
-  }
-
-  .author-social {
-      margin-left: 0;
-  }
-
-  .author-avatar {
-      margin-right: 10px;
-  }
-}
-
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .title h2 {
-      font-size: 32px;
-  }
-
-  .counter .counter-title h2 {
-      font-size: 35px;
-  }
-
-  .wrap-about {
-      margin: 0 auto 75px;
-      width: 70%;
-  }
-
-  .team-mate {
-      margin: 0 auto 30px;
-      width: 280px;
-  }
-
-  .team-mate img {
-      margin: 0 auto;
-  }
-
-  .og-grid li {
-      width: 245px;
-  }
-
-  .skill-chart {
-      margin: 0 auto 40px;
-      width: 300px;
-  }
-
-  .contact-info {
-      width: 100%;
-  }
 }

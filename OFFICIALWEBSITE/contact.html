@@ -174,34 +174,34 @@
 
         <!-- Contact Form -->
         <div class="contact-form col-md-6">
-          <form id="myForm" action="https://sheetdb.io/api/v1/k71nypempz6px" method="post" role="form">
+          <form id="myForm"
+            action="https://script.google.com/macros/s/AKfycbza8bRJ8Bn5Ju_czZ4aq4URLLQL1f4q6G3bJWip9Xo_Kmr4pnEtimWfk5AcN0hcBzuI/exec"
+            method="post" onsubmit="resetForm()" role="form">
             <div class="form-group mb-4">
-              <input type="text" placeholder="Nume" class="form-control" name="data[Nume]" id="name" required />
+              <input type="text" placeholder="Nume" class="form-control" name="Nume" id="name" required />
             </div>
 
             <div class="form-group mb-4">
-              <input type="text" placeholder="Prenume" class="form-control" name="data[Prenume]" id="surname"
+              <input type="text" placeholder="Prenume" class="form-control" name="Prenume" id="surname" required />
+            </div>
+
+            <div class="form-group mb-4">
+              <input type="text" placeholder="Oraș" class="form-control" name="Oras" id="city" required />
+            </div>
+
+            <div class="form-group mb-4">
+              <input type="email" placeholder="Adresă de email" class="form-control" name="Email" id="email" required />
+            </div>
+
+            <div class="form-group mb-4">
+              <input type="text" placeholder="Număr de telefon" class="form-control" name="Telefon" id="phone_number"
                 required />
-            </div>
-
-            <div class="form-group mb-4">
-              <input type="text" placeholder="Oraș" class="form-control" name="data[Oraș]" id="city" required />
-            </div>
-
-            <div class="form-group mb-4">
-              <input type="email" placeholder="Adresă de email" class="form-control" name="data[Adresă de email]"
-                id="email" required />
-            </div>
-
-            <div class="form-group mb-4">
-              <input type="text" placeholder="Număr de telefon" class="form-control" name="data[Număr de telefon]"
-                id="phone_number" required />
             </div>
 
 
             <p>Locația dorită:</p>
             <div class="form-group mb-4">
-              <input list="tabere" name="data[Locația dorită]" class="wide-input">
+              <input list="tabere" name="Locatie" class="wide-input">
               <datalist id="tabere">
                 <option value="Transfăgărășan">
                   <!-- 
@@ -213,7 +213,7 @@
             <p>Perioada dorită:</p>
 
             <div class="form-group mb-4">
-              <input list="weeks_camp" name="data[Perioada dorită]" class="wide-input">
+              <input list="weeks_camp" name="Perioada" class="wide-input">
               <datalist id="weeks_camp">
                 <option value="24 iunie 2024 - 30 iunie 2024">
                 <option value="1 iulie 2024 - 7 iulie 2024">
@@ -233,7 +233,7 @@
             <p>Calitate:</p>
 
             <div class="form-group mb-4">
-              <input list="responsable" name="data[Calitate]" class="wide-input">
+              <input list="responsable" name="Calitate" class="wide-input">
               <datalist id="responsable">
                 <option value="Profesor">
                 <option value="Părinte">
@@ -242,52 +242,49 @@
 
             <div class="form-group mb-4">
               <label for=""> Număr aproximativ de copii participanți: </label>
-              <input type="number" id="number_kids" name="data[Număr copii]" min="1" max="150" />
+              <input type="number" id="number_kids" name="Copii" min="1" max="150" />
             </div>
 
             <div class="form-group mb-4">
               <label for=""> Număr aproximativ de cadre didactice: </label>
-              <input type="number" id="number_teachers" name="data[Număr cadre]" min="1" max="150" />
+              <input type="number" id="number_teachers" name="Cadre" min="1" max="150" />
             </div>
 
             <div class="form-group mb-4">
-              <textarea rows="10" placeholder="Observații" class="form-control" name="data[Observații]"
+              <textarea rows="10" placeholder="Observații" class="form-control" name="Observatii"
                 id="observations"></textarea>
             </div>
 
             <div class="form-group mb-4">
-              <input type="checkbox" id="all_terms" name="data[Accept termenii]" value="da" class="check-all" />
+              <input type="checkbox" id="all_terms" name="Termeni" value="da" class="check-all" />
               <label for="accept_terms"> Accept toate afirmațiile de mai jos</label>
             </div>
 
             <div class="form-group mb-4">
-              <input type="checkbox" id="rules" name="data[Regulament]" value="da" class="check-item" required />
+              <input type="checkbox" id="rules" name="Regulament" value="da" class="check-item" required />
               <label for="accept_terms"> Declar că am citit <a href="regulament.pdf"
                   download="NomadAdventure_Regulament.pdf">regulamentul</a> și sunt de acord cu el în
                 totalitate.</label>
             </div>
 
             <div class="form-group mb-4">
-              <input type="checkbox" id="messages" name="data[Mesaje promo]" value="da" class="check-item" />
+              <input type="checkbox" id="messages" name="Mesaje" value="da" class="check-item" />
               <label for="accept_terms"> Doresc să primesc mesaje promoționale.</label>
             </div>
 
             <div class="form-group mb-4">
-              <input type="checkbox" id="emails" name="data[Email promo]" value="da" class="check-item" />
+              <input type="checkbox" id="emails" name="Promo" value="da" class="check-item" />
               <label for="accept_terms"> Doresc să primesc e-mailuri promoționale.</label>
             </div>
 
             <div class="form-group mb-4">
-              <input type="checkbox" id="newsletter" name="data[Newsletter]" value="da" class="check-item" />
+              <input type="checkbox" id="newsletter" name="Newsletter" value="da" class="check-item" />
               <label for="accept_terms"> Mă abonez la Newsletter.</label>
             </div>
 
             <div id="cf-submit">
               <input type="submit" id="submit" class="btn btn-main" title="submit" value="Trimite" />
             </div>
-
-            <!-- Confirmation message -->
-            <div id="confirmationMessage" style="display: none;">Thank you for the submission</div>
 
           </form>
         </div>

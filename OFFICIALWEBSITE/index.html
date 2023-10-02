@@ -39,6 +39,9 @@
   <!-- WhatsApp Stylesheet-->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+
+      <!-- GOOGLE SHEETS API SCRIPT-->
+  <script src="js/newsletter.js"></script>
 </head>
 
 <body id="body">
@@ -229,7 +232,7 @@ Start About Section
           <!-- /section title -->
         </div>
       </div>
-      <div class="row center-first-row">
+      <div class="row center-first-row justify-content-center">
         <div class="col-md-2 col-sm-2">
           <div class="service-item text-center">
             <i class="fa fa-shield fa-4x"></i>
@@ -341,8 +344,12 @@ Newsletter
             Pentru a fi la curent cu noutățile, nu uita să te abonezi la
             newsletter-ul nostru!
           </p>
-          <input type="email" placeholder="Adresă de email" class="form-control" name="email" id="email" required />
-          <a href="contact.html" class="btn btn-main">Abonare</a>
+          <form id="newsletter" action="https://script.google.com/macros/s/AKfycbzU7NPlgDw9JXeZtSo6JM2ZDqxajtaNviq-LBXcjESLvhdMJYJ5vCKZygref8zbkLU4Dw/exec" method="post" role="form">
+          <input type="email" placeholder="Adresă de email" class="form-control" name="Email" id="email" required />
+          <div id="cf-submit">
+            <input type="submit" id="submit" class="btn btn-main" title="submit" value="Abonare" />
+          </div>
+          </form>
         </div>
       </div>
       <!-- End row -->
