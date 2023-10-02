@@ -1617,16 +1617,7 @@ div.answer img {
   }
 }
 
-@media (min-width: 700px) and (max-width: 1090px) {
-  .counters-item:before {
-      display: none;
-  }
-}
-
 @media (min-width: 980px) and (max-width: 1150px) {
-  .parallax-section {
-      background-position: center top !important;
-  }
 
   .feature-desc h3 {
       margin-top: 0;
@@ -1658,14 +1649,6 @@ div.answer img {
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
-  .counters-item:before {
-      display: none;
-  }
-
-  .parallax-section {
-      background-position: center top !important;
-  }
-
   .navbar-inverse .navbar-nav li a {
       padding: 20px 10px;
   }
@@ -1681,10 +1664,6 @@ div.answer img {
 
   #counter {
       padding-bottom: 50px;
-  }
-
-  .counters-item {
-      margin-bottom: 30px;
   }
 
   .team-mate {
@@ -1708,18 +1687,6 @@ div.answer img {
 }
 
 @media only screen and (max-width: 767px) {
-  .counters-item:before {
-      display: none;
-  }
-
-  .clients-logo-slider {
-      text-align: center;
-  }
-
-  .parallax-section {
-      background-position: center top !important;
-  }
-
   h1 {
       font-size: 30px;
   }
@@ -1758,21 +1725,6 @@ div.answer img {
 
   #map-canvas {
       height: 250px;
-  }
-
-  .social-icon ul li,
-  .social-icon ul li:first-child {
-      margin: 15px;
-  }
-
-  .social-icon ul li a {
-      width: 50px;
-      height: 50px;
-  }
-
-  .social-icon ul li a i {
-      font-size: 24px;
-      line-height: 50px;
   }
 
   .post-excerpt h3 {

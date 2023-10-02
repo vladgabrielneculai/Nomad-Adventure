@@ -4,9 +4,10 @@ var rules = document.getElementById("rules");
 var promomsg = document.getElementById("messages");
 var promomail = document.getElementById("emails");
 var newsletter = document.getElementById("newsletter");
+var confirmationMessage = document.getElementById("confirmationMessage");
 
-form.addEventListener("submit",e =>{
-e.preventDefault();
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
 
   var alltermsValue = allterms.checked ? "da" : "nu";
   var rulesValue = rules.checked ? "da" : "nu";
@@ -22,14 +23,29 @@ e.preventDefault();
   formData.set("data[Email promo]", promomailValue);
   formData.set("data[Newsletter]", newsletterValue);
 
-fetch(form.action, {
-  method: "POST",
-  body: formData,
-}).then(
-  response => response.json(),
-).then(
-  
-)
+  fetch(form.action, {
+    method: "POST",
+    body: formData,
+  })
+    .then(function (response) {
+      if (response.ok) {
+        return response.json(); // Parse the response data
+      } else {
+        throw new Error('API request failed');
+      }
+    })
+    .then(function (data) {
+      if (data.created === 1) {
+        // Clear form inputs
+        form.reset();
+
+        // Show confirmation message
+        confirmationMessage.style.display = "block";
+      } else {
+        throw new Error('API request did not create data');
+      }
+    })
+    .catch(function (error) {
+      console.error("Error:", error);
+    });
 });
-
-
