@@ -39,9 +39,6 @@
   <!-- WhatsApp Stylesheet-->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
-
-  <!-- GOOGLE SHEETS API SCRIPT-->
-  <script src="js/newsletter.js"></script>
 </head>
 
 <body id="body">
@@ -344,14 +341,26 @@ Newsletter
             Pentru a fi la curent cu noutățile, nu uita să te abonezi la
             newsletter-ul nostru!
           </p>
-          <form id="newsletter"
-            action="https://script.google.com/macros/s/AKfycbzU7NPlgDw9JXeZtSo6JM2ZDqxajtaNviq-LBXcjESLvhdMJYJ5vCKZygref8zbkLU4Dw/exec"
-            method="post" role="form">
-            <input type="email" placeholder="Adresă de email" class="form-control" name="Email" id="email" required />
+          <form>
+            <input type="email" placeholder="Adresă de email" class="form-control" name="email" id="email" required />
             <div id="cf-submit">
               <input type="submit" id="submit" class="btn btn-main" title="submit" value="Abonare" />
             </div>
           </form>
+          <script>
+            let form = document.querySelector("form");
+            form.addEventListener('submit', (e) => {
+              e.preventDefault();
+              let data = new FormData(form);
+              fetch('https://script.google.com/macros/s/AKfycbxVBrTPvqp3-4LCophwa4uL8KwXylqpLXaDn-Od0NZVvr_dJVG2MyIfJzv2BeawaS5u8g/exec', {
+                method: "POST",
+                body: data
+              }).then(res => res.text()).then(data => {
+                console.log(data);
+
+              });
+            })
+          </script>
         </div>
       </div>
       <!-- End row -->

@@ -140,49 +140,7 @@
         document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
     }, 0);
 
-  // ----------------------------
-  // FORMULAR
-  // ----------------------------
-
-  document.addEventListener("DOMContentLoaded", function () {
-    const checkAll = document.getElementById("all_terms");
-    const checkItems = document.querySelectorAll(".check-item");
-
-    checkAll.addEventListener("change", function () {
-      const isChecked = checkAll.checked;
-      checkItems.forEach(item => {
-        item.checked = isChecked;
-      });
-    });
-  });
-
-  // Obțineți referințele la elementele formularului
-  const qualityInput = document.querySelector('input[name="Calitate"]');
-  const numKidsInput = document.getElementById('number_kids');
-  const numTeachersInput = document.getElementById('number_teachers');
-
-  // Adăugați un ascultător de eveniment pentru când se schimbă calitatea
-  qualityInput.addEventListener('change', function () {
-    const selectedQuality = qualityInput.value;
-
-    // Dacă calitatea este "Părinte"
-    if (selectedQuality === 'Părinte') {
-      // Setăm restricții pentru numărul de copii
-      numKidsInput.min = 1;
-      numKidsInput.max = 5;
-
-      // Dezactivăm introducerea numărului de cadre didactice
-      numTeachersInput.disabled = true;
-    } else {
-      // Dacă calitatea este "Profesor" sau altceva
-      // Resetăm restricțiile pentru numărul de copii
-      numKidsInput.min = 1;
-      numKidsInput.max = 150;
-
-      // Permitem introducerea numărului de cadre didactice
-      numTeachersInput.disabled = false;
-    }
-  });
+  
 
   // CAMPS
 

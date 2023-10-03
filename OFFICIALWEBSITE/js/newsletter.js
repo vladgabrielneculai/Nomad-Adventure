@@ -1,33 +1,13 @@
-var form = document.getElementById("newsletter");
+let form = document.querySelector("form");
 
-form.addEventListener("submit", function (e) {
-    e.preventDefault();
-  
-    var formData = new FormData(form);
-  
-    fetch(form.action, {
-      method: "POST",
-      body: formData,
-    })
-      .then(function (response) {
-        if (response.ok) {
-          return response.json(); // Parse the response data
-        } else {
-          throw new Error('API request failed');
-        }
-      })
-      .then(function (data) {
-        if (data.created === 1) {
-          // Clear form inputs
-          form.reset();
-  
-          // Show confirmation message
-          confirmationMessage.style.display = "block";
-        } else {
-          throw new Error('API request did not create data');
-        }
-      })
-      .catch(function (error) {
-        console.error("Error:", error);
-      });
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  let data = new FormData(form);
+  fetch('https://script.google.com/macros/s/AKfycbxVBrTPvqp3-4LCophwa4uL8KwXylqpLXaDn-Od0NZVvr_dJVG2MyIfJzv2BeawaS5u8g/exec', {
+    method: "POST",
+    body: data
+  }).then(res => res.text()).then(data => {
+    console.log(data);
+
   });
+})
