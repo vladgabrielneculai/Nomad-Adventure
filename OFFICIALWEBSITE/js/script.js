@@ -106,41 +106,49 @@
     });
   }
 
-  // -----------------------------
-  //  COUNTDOWN
-  // -----------------------------
+  // ----------------------------
+  // FORMULAR
+  // ----------------------------
 
-  const second = 1000,
-    minute = second * 60,
-    hour = minute * 60,
-    day = hour * 24;
+  document.addEventListener("DOMContentLoaded", function () {
+    const checkAll = document.getElementById("all_terms");
+    const checkItems = document.querySelectorAll(".check-item");
 
-  let today = new Date(),
-    dd = String(today.getDate()).padStart(2, "0"),
-    mm = String(today.getMonth() + 1).padStart(2, "0"),
-    yyyy = today.getFullYear(),
-    nextYear = yyyy + 1,
-    dayMonth = "06/24/",
-    campdate = dayMonth + yyyy;
+    checkAll.addEventListener("change", function () {
+      const isChecked = checkAll.checked;
+      checkItems.forEach(item => {
+        item.checked = isChecked;
+      });
+    });
+  });
 
-  today = mm + "/" + dd + "/" + yyyy;
-  if (today > campdate) {
-    campdate = dayMonth + nextYear;
-  }
+  // Obțineți referințele la elementele formularului
+  const qualityInput = document.querySelector('input[name="calitate"]');
+  const numKidsInput = document.getElementById('number_kids');
+  const numTeachersInput = document.getElementById('number_teachers');
 
-  const countDown = new Date(campdate).getTime(),
-    x = setInterval(function () {
+  // Adăugați un ascultător de eveniment pentru când se schimbă calitatea
+  qualityInput.addEventListener('change', function () {
+    const selectedQuality = qualityInput.value;
 
-      const now = new Date().getTime(),
-        distance = countDown - now;
+    // Dacă calitatea este "Părinte"
+    if (selectedQuality === 'Părinte') {
+      // Setăm restricții pentru numărul de copii
+      numKidsInput.min = 1;
+      numKidsInput.max = 5;
 
-      document.getElementById("days").innerText = Math.floor(distance / (day)),
-        document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-        document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-        document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
-    }, 0);
+      // Dezactivăm introducerea numărului de cadre didactice
+      numTeachersInput.disabled = true;
+    } else {
+      // Dacă calitatea este "Profesor" sau altceva
+      // Resetăm restricțiile pentru numărul de copii
+      numKidsInput.min = 1;
+      numKidsInput.max = 150;
 
-  
+      // Permitem introducerea numărului de cadre didactice
+      numTeachersInput.disabled = false;
+    }
+  });
 
   // CAMPS
 
