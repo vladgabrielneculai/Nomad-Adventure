@@ -30,18 +30,15 @@ e.preventDefault();
   .then(data => {
     console.log(data);
     if (data.result === "success") {
-      // Handle the success response as needed
+
       alert("Success!");
 
-      // Extract the row information if necessary
       var row = data.row;
 
-      // Set a timer to redirect after 2 seconds (adjust as needed)
       setTimeout(function () {
-        window.location.href = "contact.html"; // Replace with your page URL
-      }, 2000); // 2000 milliseconds (2 seconds) delay before redirecting
+        window.location.href = "contact.html"; 
+      }, 2000); 
     } else {
-      // Handle the case where the form submission was not successful
       alert("Form submission failed.");
     }
   });
