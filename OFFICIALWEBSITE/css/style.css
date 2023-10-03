@@ -1536,14 +1536,12 @@ div.answer img {
 
   /* VALORILE NOASTRE */
 
-  .center-first-row .col-md-2 {
-    flex-basis: 100%; /* Asigură-te că fiecare element ocupă întreaga lățime */
-  }
   .center-first-row {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: center; /* Aliniază elementele pe mijloc pe axa orizontală */
+    text-align: center; /* Aliniază textul pe mijloc */
+    margin-left: 70px;
   }
 
  /* FAQ & CAMPS */
