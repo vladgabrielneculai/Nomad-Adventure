@@ -1321,6 +1321,11 @@ emoji {
   text-align: center;
 }
 
+.center-row-values {
+  justify-content: center;
+  text-align: center;
+}
+
 /*============================================================
 	FAQ
 ==============================================================*/
