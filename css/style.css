@@ -1541,14 +1541,13 @@ div.answer img {
 
   /* VALORILE NOASTRE */
 
-  .center-row-values {
+  .center-element{
     display: flex;
     flex-direction: column;
-    align-items: center; /* Aliniază elementele pe mijloc pe axa orizontală */
-    text-align: center; /* Aliniază textul pe mijloc */
-    margin-left: 70px;
+    align-items: center;
+    text-align: center;
   }
-  
+
  /* FAQ & CAMPS */
 
   .faq-section {
