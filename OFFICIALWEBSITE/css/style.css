@@ -1536,14 +1536,14 @@ div.answer img {
 
   /* VALORILE NOASTRE */
 
-  .center-first-row {
+  .center-row-values {
     display: flex;
     flex-direction: column;
     align-items: center; /* Aliniază elementele pe mijloc pe axa orizontală */
     text-align: center; /* Aliniază textul pe mijloc */
     margin-left: 70px;
   }
-
+  
  /* FAQ & CAMPS */
 
   .faq-section {
