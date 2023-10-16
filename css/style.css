@@ -432,6 +432,25 @@ a:hover {
   bottom: 0;
 }
 
+.cookies-header {
+  background-image: url("../images/banners/cookies.png");
+  background-size: cover;
+  padding: 250px 0 100px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.cookies-header:before {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
 
 /*=================================================================
   Navigation
@@ -1474,7 +1493,71 @@ div.answer img {
 POPUP
 ==============================================================*/
 
+.cookies-section{
+    padding: 30px 100px;
+}
 
+#cookiePopup {
+  background-color: #ffffff;
+  position: fixed;
+  font-size: 14px;
+  width: calc(100% - 4em);
+  box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  line-height: 1.8em;
+  padding: 2em 1.4em;
+  border-radius: 6px;
+  transition: all 0.5s ease-in;
+  left: 50%; /* Poziționează la mijloc pe axa orizontală */
+  bottom: 2em; /* Poziția în jos */
+  transform: translateX(-50%); /* Corectează pentru a centra pe axa orizontală */
+  z-index: 99; /* Asigurați-vă că popup-ul este la un nivel inferior decât butonul WhatsApp */
+}
+
+#cookiePopup p {
+  text-align: center;
+  margin: 1.4em 0;
+}
+
+#cookiePopup button {
+  background-color: #a9c479;
+  border: none;
+  color: #ffffff;
+  font-size: 1em;
+  padding: 1em 1.4em;
+  display: block;
+  position: relative;
+  margin: auto;
+  border-radius: 40px;
+}
+
+#cookiePopup a {
+  color: #a9c479;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
+
+@media only screen and (max-width: 37.5em) {
+  #cookiePopup {
+    width: 90%; /* Lățime de 90% pentru a se potrivi pe ecrane mici (telefoane) */
+    bottom: 2em;
+  }
+  .hide {
+    right: 0;
+    bottom: 0;
+  }
+  .show {
+    right: 0;
+    bottom: 0;
+  }
+}
 
 /*============================================================
 	RESPONSIVE

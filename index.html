@@ -425,9 +425,16 @@ Newsletter
   <!-- end Footer Area
 ========================================== -->
 
-<!-- POPUP -->
+  <!-- POPUP -->
 
-
+  <div id="cookiePopup" class="hide">
+    <p>
+      Site-ul nostru utilizează cookie-uri pentru a vă oferi experiența de navigare și informațiile relevante. Înainte
+      de a continua să utilizați site-ul nostru web, sunteți de acord și acceptați <a href="cookies.html">Politica
+        noastră privind cookie-urile și confidențialitatea.</a>
+    </p>
+    <button id="acceptCookie">Sunt de acord</button>
+  </div>
 
   <!-- 
     Essential Scripts
@@ -454,16 +461,17 @@ Newsletter
   <!-- Custom js -->
   <script src="js/script.js"></script>
   <script src="js/countdown.js"></script>
+  <script src="js/cookies.js"></script>
 
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LVF468ECDF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LVF468ECDF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-LVF468ECDF');
-</script>
+    gtag('config', 'G-LVF468ECDF');
+  </script>
 </body>
 
 </html>
