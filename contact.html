@@ -91,13 +91,27 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="tabere.html" id="navbarDropdown" role="button"
                 aria-haspopup="true" aria-expanded="false">
-                Tabere 2024<i class="tf-ion-chevron-down"></i>
+                Oferte 2024<i class="tf-ion-chevron-down"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li class="dropdown dropdown-submenu dropright">
                   <a class="dropdown-item dropdown-toggle" href="tabara1.html" id="dropdown0501" role="button"
                     aria-haspopup="true" aria-expanded="false">
-                    Nomad pe Transfăgărășan 2024<i class="tf-ion-chevron-down"></i>
+                    Tabăra Nomad pe Transfăgărășan 2024<i class="tf-ion-chevron-down"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown0501">
+                    <li><a class="dropdown-item" href="regulament.html">Regulament</a></li>
+                    <li><a class="dropdown-item" href="documente.html">Documente necesare</a></li>
+                    <li><a class="dropdown-item" href="rezervare.html">Procedura de rezervare</a></li>
+                    <li><a class="dropdown-item" href="necesar_bagaj.html">Necesar bagaj</a></li>
+                    <li><a class="dropdown-item" href="meniu_tabara.html">Meniul taberei</a></li>
+                    <li><a class="dropdown-item" href="perioade.html">Perioade tabără</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown dropdown-submenu dropright">
+                  <a class="dropdown-item dropdown-toggle" href="minitabara1.html" id="dropdown0501" role="button"
+                    aria-haspopup="true" aria-expanded="false">
+                    Mini-Tabăra Nomad pe Transfăgărășan 2024<i class="tf-ion-chevron-down"></i>
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="dropdown0501">
                     <li><a class="dropdown-item" href="regulament.html">Regulament</a></li>
@@ -199,34 +213,13 @@
             </div>
 
 
-            <p>Locația dorită:</p>
+            <p>Serviciul dorit:</p>
+
             <div class="form-group mb-4">
               <input list="tabere" name="locatie" class="wide-input">
               <datalist id="tabere">
-                <option value="Transfăgărășan">
-                  <!-- 
-                <option value="Nomad pe ...">
-                  -->
-              </datalist>
-            </div>
-
-            <p>Perioada dorită:</p>
-
-            <div class="form-group mb-4">
-              <input list="weeks_camp" name="perioada" class="wide-input">
-              <datalist id="weeks_camp">
-                <option value="24 iunie 2024 - 30 iunie 2024">
-                <option value="1 iulie 2024 - 7 iulie 2024">
-                <option value="8 iulie 2024 - 14 iulie 2024">
-                <option value="15 iulie 2024 - 21 iulie 2024">
-                <option value="22 iulie 2024 - 28 iulie 2024">
-                <option value="29 iulie 2024 - 4 august 2024">
-                <option value="5 august 2024 - 11 august 2024">
-                <option value="12 august 2024 - 18 august 2024">
-                <option value="19 august 2024 - 25 august 2024">
-                <option value="26 august 2024 - 1 septembrie 2024">
-
-
+                <option value="Tabără">
+                <option value="Mini-Tabără">
               </datalist>
             </div>
 
@@ -262,8 +255,8 @@
 
             <div class="form-group mb-4">
               <input type="checkbox" id="rules" name="regulament" value="da" class="check-item" required />
-              <label for="accept_terms"> Declar că am citit <a href="regulament.html"
-                  target="_blank">regulamentul</a> și sunt de acord cu el în
+              <label for="accept_terms"> Declar că am citit <a href="regulament.html" target="_blank">regulamentul</a>
+                și sunt de acord cu el în
                 totalitate.</label>
             </div>
 
@@ -352,7 +345,10 @@
                 <h3>Tabere</h3>
               </li>
               <li>
-                <a href="tabara1.html">Nomad pe Transfăgărășan 2024</a>
+                <a href="tabara1.html">Tabăra Nomad pe Transfăgărășan 2024</a>
+              </li>
+              <li>
+                <a href="minitabara1.html">Mini-Tabăra Nomad pe Transfăgărășan 2024</a>
               </li>
             </ul>
           </div>
@@ -410,14 +406,14 @@
   <script src="js/script.js"></script>
 
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LVF468ECDF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LVF468ECDF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-LVF468ECDF');
-</script>
+    gtag('config', 'G-LVF468ECDF');
+  </script>
 </body>
 
 </html>

@@ -67,7 +67,24 @@ a:hover {
   border-radius: 40px;
 }
 
+.btn-price {
+  background: #d47334;
+  border: 1px solid #d47334;
+  color: #fff;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  border-radius: 40px;
+}
+
 .btn-main:hover {
+  color: #fff;
+}
+
+.btn-price:hover {
   color: #fff;
 }
 
