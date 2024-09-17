@@ -8,7 +8,7 @@ let today = new Date(),
     mm = String(today.getMonth() + 1).padStart(2, "0"),
     yyyy = today.getFullYear(),
     nextYear = yyyy + 1,
-    dayMonth = "06/24/",
+    dayMonth = "06/23/",
     campdate = dayMonth + yyyy;
 
 today = mm + "/" + dd + "/" + yyyy;
