@@ -1688,8 +1688,8 @@ POPUP
   }
 
   .campimages {
-    /* max-width: 300px; /* Face imaginile să nu depășească lățimea ecranului */
-    /* max-height: 225px; */
+    max-width: 500px; /* Face imaginile să nu depășească lățimea ecranului */
+    max-height: 300px;
     display: block; /* Elimină marginile suplimentare din jurul imaginilor */
     margin: 0; /* Aliniază imaginile pe mijloc pe axa orizontală */
   }
