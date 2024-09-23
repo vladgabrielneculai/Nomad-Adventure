@@ -1442,8 +1442,8 @@ emoji {
 }
 
 div.answer img {
-  width: 500px;
-  height: 300px;
+  width: 50%;
+  height: 40%;
   padding: 1em 1em;
   display: block;
   margin: 0 auto;
@@ -1688,10 +1688,10 @@ POPUP
   }
 
   .campimages {
-    max-width: 300px; /* Face imaginile să nu depășească lățimea ecranului */
-    max-height: 225px;
+    /* max-width: 300px; /* Face imaginile să nu depășească lățimea ecranului */
+    /* max-height: 225px; */
     display: block; /* Elimină marginile suplimentare din jurul imaginilor */
-    margin: 0 auto; /* Aliniază imaginile pe mijloc pe axa orizontală */
+    margin: 0; /* Aliniază imaginile pe mijloc pe axa orizontală */
   }
 
   /* BUTTON */
